@@ -37,13 +37,15 @@
   }
 }
 
-@keyframes slide-from-top {
+@keyframes fade-and-spread {
   from {
-    transform: translateY(-3em);
+    padding: 0px 0px 0px 0px;
+    opacity: 0;
   }
 
   to {
-    transform: translateY(0);
+    padding: 0px 15px 0px 15px;
+    opacity: 1;
   }
 }
 
@@ -67,32 +69,25 @@ main {
 }
 
 nav {
-  transform: translateY(-3em);
-  animation: slide-from-top .5s ease-out .1s normal forwards;
-  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 0;
+  bottom: 50px;
   left: 0;
   width: 100%;
-  height: 3em;
+  height: 5em;
 }
 
 nav a {
+  opacity: 0;
+  animation: fade-and-spread .5s ease-out .1s normal forwards;
   color: white;
-  font-size: 2.5em;
-  padding: 0px 7.5px 0px 7.5px;
-  background-color: rgba(0, 0, 0, 0.0);
-  transition: background-color .1s ease-in-out;
+  font-size: 3em;
+  padding: 0px 15px 0px 15px;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
