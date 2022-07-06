@@ -132,3 +132,37 @@ nav a {
   opacity: 0;
   animation: fade-in .5s ease-out .5s normal forwards;
 }
+
+/* Links */
+.link {
+  position: relative;
+}
+.link:before,
+.link:after {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.link:before {
+  background: rgba(0,0,0,.75);
+  border-radius: 10px;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 14px;
+  padding: 5px 10px;
+    top: -25px;
+  white-space: nowrap;
+}
+
+/* Link Animation */
+.link:after,
+.link:before {
+  transform: translate3d(0,-10px,0);
+  transition: all .15s ease-in-out;
+}
+.link:hover:after,
+.link:hover:before {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
