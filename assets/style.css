@@ -1,6 +1,7 @@
 @font-face {
   font-family: Ginto;
   src: url(font/Ginto.ttf);
+  font-display: swap;
 }
 
 @keyframes fade-from-right {
@@ -106,6 +107,7 @@ nav a {
 
 .logo-container img {
   width: 15em;
+  height: 19.5em;
 }
 
 .text-container {
