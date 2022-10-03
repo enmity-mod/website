@@ -97,13 +97,6 @@ nav a {
   transform: translateX(-20px);
 }
 
-@media only screen and (min-width: 700px) {
-  .logo-container {
-    display: block;
-    animation: fade-from-right .5s ease-out .1s normal forwards;
-  }
-}
-
 .logo-container img {
   width: 15em;
 }
@@ -131,4 +124,26 @@ nav a {
   padding: 0;
   opacity: 0;
   animation: fade-in .5s ease-out .5s normal forwards;
+}
+
+.download-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+.download-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .logo-container {
+    display: block;
+    animation: fade-from-right .5s ease-out .1s normal forwards;
+  }
+
+  .download-links {
+    font-size: 2em;
+  }
 }
