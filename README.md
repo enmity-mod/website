@@ -1,5 +1,5 @@
 <div align='center'>
-   <img src='https://repo.enmity.app/banner.png' />
+   <img src='https://enmity-mod.github.io/repo/banner.png' />
 </div>
 
 ---
@@ -7,7 +7,7 @@
 <div align='center'>
    <h3>Enmity Website</h3>
 
-   Code for the Enmity's website [enmity.app](https://enmity.app).
+   Code for the Enmity's website [enmity.unbound.rip](https://enmity.unbound.rip).
 </div>
 
 ---
