@@ -1,56 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#5451C1">
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Enmity</title>
 
-  <meta property="og:title" content="Enmity" />
-  <meta property="og:description" content="The power of addons, all in your hand." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://enmity.unbound.rip" />
-  <meta property="og:image" content="https://enmity-mod.github.io/assets/icon.png" />
+	<!-- Fonts -->
+	<link rel='preconnect' href='https://fonts.googleapis.com'>
+	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter&display=swap'>
 
-  <title>Enmity</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="apple-touch-icon" sizes="128x128" href="assets/favicon.png">
-  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+	<!-- Styles -->
+	<link rel='stylesheet' href='/styles.css'>
 </head>
 <body>
-  <nav>
-    <a href="https://twitter.com/enmityapp">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a>
-
-    <a href="https://github.com/enmity-mod">
-      <i class="fa fa-github" aria-hidden="true"></i>
-    </a>
-
-    <a href="https://discord.gg/enmity">
-      <i class="fa fa-discord" aria-hidden="true"></i>
-    </a>
-
-    <a href="https://enmity.unbound.rip/download">
-      <i class="fa fa-download" aria-hidden="true"></i>
-    </a>
-
-    <a href="https://enmity-mod.github.io/repo">
-      <i class="fa fa-archive" aria-hidden="true"></i>
-    </a>
-  </nav>
-
-  <main>
-    <div class="logo-container">
-      <img src="assets/icon.png" />
-    </div>
-
-    <div class="text-container">
-      <h2>Enmity</h2>
-      <p>The power of addons, all in your hand.</p>
-    </div>
-  </main>
+	<div class='container'>
+		<div class='background-overlay'></div>
+		<img class='background' src='/assets/thumbnail.png' />
+		<div class='content'>
+			<img class='logo' src='/assets/icon.png' />
+			<div class='descriptor'>
+				<span class='title'>
+					Enmity
+				</span>
+				<span class='subtext'>
+					The power of addons, all in your hand.
+				</span>
+			</div>
+		</div>
+		<footer>
+			<div class='tooltip'>
+				<a href='/download' class='footer-item'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' style='transform: scale(1.1);' viewBox='0 0 24 24'><path fill='currentColor' d='M12 15.575q-.2 0-.375-.062T11.3 15.3l-3.6-3.6q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L11 12.15V5q0-.425.288-.712T12 4q.425 0 .713.288T13 5v7.15l1.875-1.875q.3-.3.713-.288t.712.313q.275.3.288.7t-.288.7l-3.6 3.6q-.15.15-.325.213t-.375.062M6 20q-.825 0-1.412-.587T4 18v-2q0-.425.288-.712T5 15q.425 0 .713.288T6 16v2h12v-2q0-.425.288-.712T19 15q.425 0 .713.288T20 16v2q0 .825-.587 1.413T18 20z'/></svg>
+				</a>
+				<span class='tooltip-text'>Download</span>
+			</div>
+			<div class='tooltip'>
+				<a href='https://enmity-mod.github.io/repo/' class='footer-item'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 24 24'><path fill='currentColor' d='M6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h12q.825 0 1.413.588T20 4v16q0 .825-.587 1.413T18 22zm5-11l2.5-1.5L16 11V4h-5z'/></svg>
+				</a>
+				<span class='tooltip-text'>APT Repository</span>
+			</div>
+			<div class='tooltip'>
+				<a href='https://github.com/enmity-mod' class='footer-item'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 56 56'><path fill='currentColor' fill-rule='evenodd' d='M3 28c0 11.046 7.163 20.416 17.097 23.722c1.25.23 1.707-.542 1.707-1.205c0-.593-.022-2.166-.034-4.251c-6.954 1.51-8.421-3.352-8.421-3.352c-1.138-2.889-2.777-3.658-2.777-3.658c-2.27-1.55.172-1.519.172-1.519c2.51.177 3.83 2.577 3.83 2.577c2.23 3.82 5.851 2.716 7.276 2.076c.227-1.614.873-2.716 1.586-3.34c-5.55-.631-11.387-2.777-11.387-12.357c0-2.729.974-4.962 2.574-6.708c-.258-.632-1.116-3.175.245-6.616c0 0 2.098-.673 6.874 2.563c1.994-.556 4.133-.832 6.259-.843c2.124.01 4.262.287 6.258.843c4.773-3.236 6.868-2.563 6.868-2.563c1.365 3.44.507 5.984.25 6.616c1.603 1.746 2.57 3.98 2.57 6.708c0 9.605-5.846 11.718-11.414 12.336c.896.772 1.696 2.298 1.696 4.63c0 3.342-.031 6.038-.031 6.858c0 .669.451 1.447 1.719 1.203C45.844 48.407 53 39.043 53 28C53 14.194 41.806 3 27.998 3C14.194 3 3 14.193 3 28'/></svg>
+				</a>
+				<span class='tooltip-text'>GitHub</span>
+			</div>
+			<div class='tooltip'>
+				<a href='https://discord.gg/rMdzhWUaGT' class='footer-item'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 24 24'><path fill='currentColor' d='M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12'/></svg>
+				</a>
+				<span class='tooltip-text'>Discord</span>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
