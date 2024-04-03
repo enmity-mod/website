@@ -153,6 +153,10 @@ a {
 	.descriptor > .subtext {
 		font-size: 1.5rem;
 	}
+
+	.download-links > a {
+		font-size: 1.5rem !important;
+	}
 }
 
 @media (max-width: 600px) {
